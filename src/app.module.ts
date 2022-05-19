@@ -4,7 +4,7 @@ import { getConnectionOptions } from 'typeorm';
 import { UsersModule } from './models/users/users.module';
 import { CarsModule } from './models/cars/cars.module';
 import { BrandModule } from './models/brand/brand.module';
-import { PersonObjectsModule } from './models/person-objects/person-objects.module';
+import { TestsModule } from './models/tests/tests.module';
 
 @Module({
   imports: [
@@ -17,7 +17,7 @@ import { PersonObjectsModule } from './models/person-objects/person-objects.modu
     UsersModule,
     CarsModule,
     BrandModule,
-    PersonObjectsModule,
+    TestsModule,
   ],
   controllers: [],
   providers: [],

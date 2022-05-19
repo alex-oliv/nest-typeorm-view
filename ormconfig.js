@@ -6,7 +6,7 @@ module.exports = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   logging: false,
-  entities: ['dist/**/*{.entity,.view.entity}.js'],
+  entities: ['dist/**/*{.entity,.view}.js'],
   migrations: ['./dist/database/migrations/*.js'],
   cli: {
     migrationsDir: './src/database/migrations',

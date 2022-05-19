@@ -29,7 +29,10 @@ export class Car {
   @UpdateDateColumn()
   updated_at!: Date;
 
-  @ManyToOne(() => Brand, (brand) => brand.id, { nullable: true })
+  @ManyToOne(() => Brand, (brand) => brand.id, {
+    nullable: true,
+    cascade: ['insert', 'update'],
+  })
   @JoinColumn({ name: 'brand_id' })
   brand!: Brand;
 }

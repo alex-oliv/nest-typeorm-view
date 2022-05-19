@@ -1,15 +1,12 @@
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty } from 'class-validator';
 
 export class CreateCarDto {
-  @IsString()
   @IsNotEmpty()
   carName: string;
 
-  @IsString()
   @IsNotEmpty()
   weight: string;
 
-  @IsString()
   @IsNotEmpty()
   color: string;
 }
